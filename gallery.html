@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery – Self‑Defence NGO</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 2rem; }
+        .gallery-grid img { width: 100%; height: 150px; object-fit: cover; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+        .video-grid iframe { width: 100%; height: 200px; border: none; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">Self‑Defence NGO</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home<br><span class="hi">होम</span></a></li>
+                    <li><a href="about.html">About Us<br><span class="hi">हमारे बारे में</span></a></li>
+                    <li><a href="programs.html">Programs<br><span class="hi">प्रोग्राम्स</span></a></li>
+                    <li><a href="events.html">Events & News<br><span class="hi">इवेंट्स और न्यूज़</span></a></li>
+                    <li><a href="membership.html">Membership/Volunteer<br><span class="hi">सदस्यता/वॉलंटियर</span></a></li>
+                    <li><a href="donation.html">Donation & Support<br><span class="hi">डोनेशन/सपोर्ट</span></a></li>
+                    <li><a href="gallery.html">Gallery<br><span class="hi">गैलरी</span></a></li>
+                    <li><a href="partners.html">Partners<br><span class="hi">पार्टनर्स</span></a></li>
+                    <li><a href="resources.html">Resources<br><span class="hi">रिसोर्सेज़</span></a></li>
+                    <li><a href="contact.html">Contact<br><span class="hi">संपर्क करें</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Gallery<br><span class="hi">गैलरी</span></h1>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2>Photo Gallery<br><span class="hi">फोटो गैलरी</span></h2>
+            <p>Browse snapshots from our training sessions, workshops and events.<br><span class="hi">हमारे प्रशिक्षण सत्रों, कार्यशालाओं और इवेंट्स की झलकियां देखें।</span></p>
+            <div class="gallery-grid">
+                <img src="hero.png" alt="Photo 1">
+                <img src="training.png" alt="Photo 2">
+                <img src="background.png" alt="Photo 3">
+                <img src="training.png" alt="Photo 4">
+                <img src="hero.png" alt="Photo 5">
+                <img src="background.png" alt="Photo 6">
+            </div>
+
+            <h2>Video Gallery<br><span class="hi">वीडियो गैलरी</span></h2>
+            <p>Watch clips from self‑defence demonstrations and speeches.<br><span class="hi">आत्म‑रक्षा प्रदर्शनों और भाषणों के क्लिप्स देखें।</span></p>
+            <div class="video-grid">
+                <!-- Embedded videos (replace src with your own hosted videos or YouTube links) -->
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video 1" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video 2" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video 3" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Self‑Defence NGO. All rights reserved.<br><span class="hi">© 2025 Self‑Defence NGO. सर्वाधिकार सुरक्षित।</span></p>
+        </div>
+    </footer>
+</body>
+</html>

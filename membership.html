@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership & Volunteer – Self‑Defence NGO</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Inline styles for forms */
+        .form-group { margin-bottom: 1rem; }
+        .form-group label { display: block; margin-bottom: 0.3rem; font-weight: bold; }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px; }
+        .form-section { margin-bottom: 2rem; background: #f9f9fb; padding: 1.5rem; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+        .form-section h3 { margin-bottom: 1rem; }
+        .submit-btn { display: inline-block; padding: 0.7rem 1.5rem; background: #5a2a7e; color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 1rem; }
+        .submit-btn:hover { background: #492465; }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">Self‑Defence NGO</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home<br><span class="hi">होम</span></a></li>
+                    <li><a href="about.html">About Us<br><span class="hi">हमारे बारे में</span></a></li>
+                    <li><a href="programs.html">Programs<br><span class="hi">प्रोग्राम्स</span></a></li>
+                    <li><a href="events.html">Events & News<br><span class="hi">इवेंट्स और न्यूज़</span></a></li>
+                    <li><a href="membership.html">Membership/Volunteer<br><span class="hi">सदस्यता/वॉलंटियर</span></a></li>
+                    <li><a href="donation.html">Donation & Support<br><span class="hi">डोनेशन/सपोर्ट</span></a></li>
+                    <li><a href="gallery.html">Gallery<br><span class="hi">गैलरी</span></a></li>
+                    <li><a href="partners.html">Partners<br><span class="hi">पार्टनर्स</span></a></li>
+                    <li><a href="resources.html">Resources<br><span class="hi">रिसोर्सेज़</span></a></li>
+                    <li><a href="contact.html">Contact<br><span class="hi">संपर्क करें</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Membership &amp; Volunteer<br><span class="hi">सदस्यता और वॉलंटियर</span></h1>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <p>Become part of our mission by signing up as a member or volunteer. Membership fees are as follows: General Member, Student Member and Volunteer Member – ₹30; Lifetime Member – ₹500. Each membership includes a digital ID card and certificate upon approval. Volunteers help us organise events, training sessions and outreach activities.<br><span class="hi">सदस्य या वॉलंटियर के रूप में शामिल होकर हमारे मिशन का हिस्सा बनें। सदस्यता शुल्क इस प्रकार है: सामान्य सदस्य, छात्र सदस्य और वॉलंटियर सदस्य – ₹30; लाइफटाइम सदस्य – ₹500। प्रत्येक सदस्यता में अनुमोदन के बाद डिजिटल ID कार्ड और प्रमाणपत्र शामिल हैं। वॉलंटियर्स हमें इवेंट्स, ट्रेनिंग सत्र और आउटरीच गतिविधियों के आयोजन में मदद करते हैं।</span></p>
+
+            <div class="form-section">
+                <h3>Membership Form<br><span class="hi">सदस्यता फॉर्म</span></h3>
+                <form onsubmit="alert('Thank you for joining us!\nधन्यवाद!'); return false;">
+                    <div class="form-group">
+                        <label for="mname">Full Name<br><span class="hi">पूरा नाम</span></label>
+                        <input type="text" id="mname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mage">Age<br><span class="hi">उम्र</span></label>
+                        <input type="number" id="mage" min="5" max="80" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mgender">Gender<br><span class="hi">लिंग</span></label>
+                        <select id="mgender" required>
+                            <option value="">Select / चुनें</option>
+                            <option>Female / महिला</option>
+                            <option>Male / पुरुष</option>
+                            <option>Other / अन्य</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mtype">Membership Type<br><span class="hi">सदस्यता प्रकार</span></label>
+                        <select id="mtype" required>
+                            <option value="">Select / चुनें</option>
+                            <option value="general">General Member – ₹30 / सामान्य सदस्य – ₹30</option>
+                            <option value="student">Student Member – ₹30 / छात्र सदस्य – ₹30</option>
+                            <option value="volunteer">Volunteer Member – ₹30 / वॉलंटियर सदस्य – ₹30</option>
+                            <option value="lifetime">Lifetime Member – ₹500 / लाइफटाइम सदस्य – ₹500</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mphone">Mobile Number<br><span class="hi">मोबाइल नंबर</span></label>
+                        <input type="tel" id="mphone" pattern="[0-9]{10}" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="memail">Email Address<br><span class="hi">ईमेल</span></label>
+                        <input type="email" id="memail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="maddress">Address<br><span class="hi">पता</span></label>
+                        <textarea id="maddress" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Membership Fee Payment<br><span class="hi">सदस्यता शुल्क भुगतान</span></label>
+                        <p>Send the appropriate fee via UPI (<strong>selfdefence@upi</strong>) according to your membership type and enter the transaction ID below.<br><span class="hi">अपनी सदस्यता प्रकार के अनुसार UPI (<strong>selfdefence@upi</strong>) के माध्यम से शुल्क भेजें और नीचे ट्रांजैक्शन ID दर्ज करें।</span></p>
+                        <input type="text" placeholder="Transaction ID / ट्रांजैक्शन ID" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit<br><span class="hi">सबमिट करें</span></button>
+                </form>
+                <p style="margin-top: 1rem; font-size: 0.9rem;">After your payment is verified and application approved, you will receive a link to download your digital ID card.<br><span class="hi">आपका भुगतान सत्यापित होने और आवेदन स्वीकृत होने के बाद, आपको अपना डिजिटल ID कार्ड डाउनलोड करने का लिंक मिलेगा।</span></p>
+            </div>
+
+            <div class="form-section">
+                <h3>Volunteer Registration<br><span class="hi">वॉलंटियर रजिस्ट्रेशन</span></h3>
+                <form onsubmit="alert('Thank you for volunteering!\nधन्यवाद!'); return false;">
+                    <div class="form-group">
+                        <label for="vname">Full Name<br><span class="hi">पूरा नाम</span></label>
+                        <input type="text" id="vname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="vage">Age<br><span class="hi">उम्र</span></label>
+                        <input type="number" id="vage" min="16" max="80" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="vgender">Gender<br><span class="hi">लिंग</span></label>
+                        <select id="vgender" required>
+                            <option value="">Select / चुनें</option>
+                            <option>Female / महिला</option>
+                            <option>Male / पुरुष</option>
+                            <option>Other / अन्य</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="vphone">Mobile Number<br><span class="hi">मोबाइल नंबर</span></label>
+                        <input type="tel" id="vphone" pattern="[0-9]{10}" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="vemail">Email Address<br><span class="hi">ईमेल</span></label>
+                        <input type="email" id="vemail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="vskills">Skills &amp; Interests<br><span class="hi">कौशल और रुचियाँ</span></label>
+                        <textarea id="vskills" rows="3" placeholder="e.g. event management, teaching, social media / उदाहरण: इवेंट मैनेजमेंट, शिक्षण, सोशल मीडिया"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Register<br><span class="hi">रजिस्टर करें</span></button>
+                </form>
+            </div>
+
+            <div class="form-section">
+                <h3>Digital ID Card Sample with QR Code<br><span class="hi">QR कोड के साथ डिजिटल ID कार्ड नमूना</span></h3>
+                <p>
+                    After your membership is approved and payment is confirmed, your digital ID card will include a QR code for verification. The QR code links back to our website where your membership can be validated. Below is a sample design for reference.<br>
+                    <span class="hi">जब आपकी सदस्यता स्वीकृत हो जाए और भुगतान की पुष्टि हो जाए, आपके डिजिटल ID कार्ड में सत्यापन के लिए एक QR कोड शामिल होगा। QR कोड हमारी वेबसाइट से लिंक होता है, जहाँ आपकी सदस्यता सत्यापित की जा सकती है। नीचे एक नमूना डिज़ाइन दिया गया है।</span>
+                </p>
+                <div style="margin: 1rem auto; max-width: 340px;">
+                    <iframe src="id_card_sample.html" style="width: 100%; height: 240px; border: none;"></iframe>
+                </div>
+                <p style="font-size: 0.8rem;">Note: The QR code shown is a placeholder and does not contain actual data.<br><span class="hi">ध्यान दें: दिखाया गया QR कोड केवल एक प्लेसहोल्डर है और वास्तविक डेटा नहीं है।</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Self‑Defence NGO. All rights reserved.<br><span class="hi">© 2025 Self‑Defence NGO. सर्वाधिकार सुरक्षित।</span></p>
+        </div>
+    </footer>
+</body>
+</html>
